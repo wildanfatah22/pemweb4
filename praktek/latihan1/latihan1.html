@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".sembunyi1").click(function() {
+                $("#foto1").hide("slow")
+            });
+            $(".tampil1").click(function() {
+                $("#foto1").show("slow")
+            });
+            $(".sembunyi2").click(function() {
+                $("#foto2").hide("slow")
+            });
+            $(".tampil2").click(function() {
+                $("#foto2").show("slow")
+            });
+        });
+    </script>
+    <style type="text/css">
+        * {
+            background-color: aqua;
+        }
+        
+        .tampil1,
+        .sembunyi1,
+        .tampil2,
+        .sembunyi2 {
+            border-radius: 10px;
+            background: rgb(228, 45, 73);
+            color: white;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 12px 0;
+        }
+        
+        img {
+            padding-right: 10px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="btn">
+            <input type="button" class="tampil1" value="Tampil" />
+            <input type="button" class="sembunyi1" value="Sembunyikan" />
+            <br>
+            <input type="button" class="tampil2" value="Tampil" />
+            <input type="button" class="sembunyi2" value="Sembunyikan" />
+        </div>
+        <div class="gambar">
+            <p><img id="foto1" src="img/superman.jpg" width="400px" height="400px"></p>
+            <p><img id="foto2" src="img/thebatman.jpg" width="400px" height="400px"></p>
+        </div>
+    </center>
+
+</body>
+
+</html>

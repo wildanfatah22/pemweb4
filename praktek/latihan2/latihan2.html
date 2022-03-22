@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <script src="jquery/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#satu").dblclick(function() {
+                $("#satu").css("background-color", "red");
+            });
+            $("#dua").dblclick(function() {
+                $("#dua").css("background-color", "red");
+            });
+            $("#tiga").dblclick(function() {
+                $("#tiga").css("background-color", "red");
+            });
+            $("#empat").dblclick(function() {
+                $("#empat").css("background-color", "red");
+            });
+        });
+    </script>
+    <style type="text/css">
+        body {
+            background-color: #33dae6;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 26px;
+            color: #fff;
+        }
+        
+        #satu,
+        #dua,
+        #tiga,
+        #empat {
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            border-radius: 15px;
+        }
+        
+        .kotak {
+            display: flex;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .kotak p {
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Klik 2 kali pada setiap kotak untuk mengubah warna</h1>
+    <div class="kotak">
+        <p id="satu"> </p>
+        <p id="dua"> </p>
+        <p id="tiga"> </p>
+        <p id="empat"></p>
+    </div>
+</body>
+
+</html>
